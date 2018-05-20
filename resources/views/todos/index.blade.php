@@ -9,7 +9,7 @@
 					<div class="card">
 						<div class="card-body bg-light">
 							<h5 id="TodoList" class="font-weight-bold">
-								{{ $todo->text }}
+								<a href="todo/{{ $todo->id }}">{{ $todo->text }}</a>
 								&nbsp; 
 								<small class="alert alert-danger DueDate"><strong>{{ $todo->due }}</strong></small>
 							</h5>

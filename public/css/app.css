@@ -10425,13 +10425,30 @@ a.text-dark:focus {
   font-size: 17px;
 }
 
+#TodoList1 {
+  font-size: 27px;
+}
+
+#TodoBody {
+  font-size: 17px;
+}
+
 .DueDate {
   padding: 5px;
   font-size: 14px;
 }
 
+.DueDate1 {
+  padding: 5px;
+  font-size: 16px;
+}
+
 #space {
   margin-bottom: 7px;
+}
+
+a {
+  color: #000;
 }
 
 #footer {

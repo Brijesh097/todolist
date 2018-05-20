@@ -18,11 +18,20 @@ class TodosController extends Controller
         // Return to home page
         return view('welcome');
         */
+
+        /*
+        // Method 1 to fetch data
         $todos = Todo::all();
+        */
+
+        // Method 2 to fetch data
+        $todos = Todo::orderBy('created_at', 'desc')->get();
+
         /* 
         // Dumps all the data for the DB
         var_dump($todos);
         */
+
         return view('todos.index')->with('todos', $todos);
     }
 
@@ -55,7 +64,8 @@ class TodosController extends Controller
      */
     public function show($id)
     {
-        //
+        $todo = Todo::find($id);
+        return view('todos.show')->with('todo', $todo);
     }
 
     /**
