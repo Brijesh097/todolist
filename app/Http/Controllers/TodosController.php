@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Todo;   // Used to bring in the Todo model
 
 class TodosController extends Controller
 {
@@ -13,8 +14,16 @@ class TodosController extends Controller
      */
     public function index()
     {
+        /*
         // Return to home page
         return view('welcome');
+        */
+        $todos = Todo::all();
+        /* 
+        // Dumps all the data for the DB
+        var_dump($todos);
+        */
+        return view('todos.index')->with('todos', $todos);
     }
 
     /**
