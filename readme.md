@@ -1,4 +1,4 @@
-<center><img src="https://lh3.googleusercontent.com/pw-ugqJzWSsM6kr7T4JKttvpqm2UOfvz8ZM50nFTv7yrKs2DESFVsuVTMbbsFMunh3jVA5YiL-yhKZovQZHR=w1920-h937" width="180"></center>
+<center><img src="https://user-images.githubusercontent.com/25717047/40565969-3a5dfb2c-608c-11e8-8487-1108eb739d20.JPG" width="180"></center>
 <hr style="border: 0; height: 0; border-top: 0px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
 
 ## About
@@ -36,55 +36,65 @@ Things you'll need to install the software:
 A step by step procedure that explains you have to get your development environment running:
 
 - **Clone GitHub repository**
-  - Find a location on your computer where you want to store the project. Now, run the following command to pull the project from GitHub and create a copy of it. And *cd* into the project.
+
+  Find a location on your computer where you want to store the project. Now, run the following command to pull the project from GitHub and create a copy of it. And *cd* into the project.
   ```
   https://github.com/Brijesh097/todolist.git
   ```
 
 
 - **Install Composer Dependencies**
-  - Whenever you clone a new Laravel project you must now install all of the project dependencies. This is what actually installs Laravel itself, among other necessary packages to get started. So to install all this source code we run composer with the following command.
+
+  Whenever you clone a new Laravel project you must now install all of the project dependencies. This is what actually installs Laravel itself, among other necessary packages to get started. So to install all this source code we run composer with the following command.
   ```
   composer install
   ```
 
 
 - **Install NPM Dependencies**
-  - Just like how we must install composer packages to move forward, we must also install necessary NPM packages to move forward. This will install Vue.js, Bootstrap.css, Lodash, and Laravel Mix.
+
+  Just like how we must install composer packages to move forward, we must also install necessary NPM packages to move forward. This will install Vue.js, Bootstrap.css, Lodash, and Laravel Mix.
   ```
   npm install
   ```
 
 
 - **Create a copy of your .env file**
-  - .env files are not generally committed to source control for security reasons. But there is a .env.example which is a template of the .env file that the project expects us to have. So we will make a copy of the .env.example file and create a .env file.
+
+  **.env** files are not generally committed to source control for security reasons. But there is a .env.example which is a template of the .env file that the project expects us to have. So we will make a copy of the .env.example file and create a .env file.
   ```
   cp .env.example .env
   ```
 
 - **Generate an app encryption key**
-  - Laravel requires you to have an app encryption key which is generally randomly generated and stored in your .env file. The app will use this encryption key to encode various elements of your application from cookies to password hashes and more.
+
+  Laravel requires you to have an app encryption key which is generally randomly generated and stored in your .env file. The app will use this encryption key to encode various elements of your application from cookies to password hashes and more.
   ```
   php artisan key:generate
   ```
-  - If you check the .env file again, you will see that it now has a long random string of characters in the **APP_KEY** field. We now have a valid app encryption key.
+  If you check the .env file again, you will see that it now has a long random string of characters in the **APP_KEY** field. We now have a valid app encryption key.
 
 - **Create an empty database for the application**
-  - Create an empty database for the project. For this application will create a database named "**todolist**".
+
+  Create an empty database for the project. For this application will create a database named "**todolist**".
 
 - **In the .env file, add database information to allow Laravel to connect to the database**
-  - We will want to allow Laravel to connect to the database that you just created in the previous step. To do this, we must add the connection credentials in the **.env** file and Laravel will handle the connection from there.
-  - In the **.env** file fill in the **DB_HOST**, **DB_PORT**, **DB_DATABASE**, **DB_USERNAME**, and **DB_PASSWORD** options to match the credentials of the database you just created. This will allow us to run migrations in the next step.
+
+  We will want to allow Laravel to connect to the database that you just created in the previous step. To do this, we must add the connection credentials in the **.env** file and Laravel will handle the connection from there.
+
+  In the **.env** file fill in the **DB_HOST**, **DB_PORT**, **DB_DATABASE**, **DB_USERNAME**, and **DB_PASSWORD** options to match the credentials of the database you just created. This will allow us to run migrations in the next step.
 
 - **Migrate the database**
-  - Once your credentials are in the **.env** file, now you can migrate your database.
+
+  Once your credentials are in the **.env** file, now you can migrate your database.
   ```
   php artisan migrate
   ```
-  - It’s not a bad idea to check your database to make sure everything migrated the way you expected.
+  It’s not a bad idea to check your database to make sure everything migrated the way you expected.
 
 - **Wrapping Up**
-  - That is all you need to get started on this project.
+
+  That is all you need to get started on this project.
 
 
 ## Contributing
